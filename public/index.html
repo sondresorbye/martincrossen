@@ -3,7 +3,7 @@
 
 <head>
     <title>Martin Crossen</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300|Audiowide|Comfortaa:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300|Audiowide|Comfortaa:700|Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style/footer.css?v=0.1">
     <link rel="stylesheet" href="style/index.css?v=0.1">
     <link rel="stylesheet" href="style/header.css">
@@ -14,15 +14,27 @@
 
 <body>
     <header>
-      <a href="index.html">Martin Crossen</a>
-      <div class="arrow-right"></div>
+        <a href="index.html">Martin Crossen</a>
+        <div class="arrow-right"></div>
+        <button id="menuBtn" class="action material-icons">menu</button>
     </header>
+    <nav style="margin-top: -328px;" id="dropDown">
+        <div>
+            <ul>
+                <li><a href="index.html?c=nyheter" class="navBtn">Nyheter</a></li>
+                <li><a href="index.html?c=meninger" class="navBtn">Meninger</a></li>
+                <li><a href="index.html?c=videoer" class="navBtn">Videoer</a></li>
+                <li><a href="index.html?c=informasjon" class="navBtn">Informasjon</a></li>
+                <li><a href="om-oss.html" class="navBtn">Om oss</a></li>
+            </ul>
+        </div>
+    </nav>
     <main>
-      <div id="martinImg" class="parallax-window" data-parallax="scroll" data-position-y="0px" data-image-src="images/martin.jpg">
-        <a href="#" id="meldpaBtn">MELD DEG PÅ</a>
-      </div>
-      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, illum itaque aliquid reiciendis eos beatae earum amet vitae labore cupiditate facilis voluptate quod enim rem ex, nesciunt dolorem atque. Commodi.</div>
-      <div>Voluptatem nam nobis odit, veniam ipsa aliquam nemo animi velit rem voluptatibus! Expedita eius perferendis aliquid laudantium, saepe quas, nostrum ut, sint veritatis rem tempora laboriosam officia aut aliquam, quisquam.</div>
+        <div id="martinImg" class="parallax-window" data-parallax="scroll" data-position-y="0px" data-image-src="images/martin.jpg">
+            <a href="#" id="meldpaBtn">MELD DEG PÅ</a>
+        </div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, illum itaque aliquid reiciendis eos beatae earum amet vitae labore cupiditate facilis voluptate quod enim rem ex, nesciunt dolorem atque. Commodi.</div>
+        <div>Voluptatem nam nobis odit, veniam ipsa aliquam nemo animi velit rem voluptatibus! Expedita eius perferendis aliquid laudantium, saepe quas, nostrum ut, sint veritatis rem tempora laboriosam officia aut aliquam, quisquam.</div>
     </main>
     <footer>
         <h3><a href="index.html">Martin Crossen</a></h3>
@@ -34,6 +46,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/parallax.js"></script>
+    <script src="js/header.js"></script>
 </body>
 
 </html>

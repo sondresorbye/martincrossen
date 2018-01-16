@@ -29,10 +29,87 @@ header a {
 .arrow-right {
 	position: absolute;
 	top: 0;
-	left: 280px;
+	left: 279px;
 	width: 0px;
 	height: 0px;
 	border-top: 35px solid transparent;
 	border-bottom: 35px solid transparent;
 	border-left: 60px solid white;
+}
+
+#menuBtn {
+    /* display: none; */
+    position: absolute;
+    right: 22px;
+    top: 16px;
+    background: none;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+#dropDown {
+    width: 100%;
+    background: #D50000;
+    height: 325px;
+    transition: .3s;
+    position: fixed;
+    z-index: 9;
+}
+
+#searchSideNav {
+    width: 100%;
+    padding: 20px 0;
+}
+
+#searchSideNav input {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    display: table;
+}
+
+#searchSideNav button {
+    top: -34px;
+    right: 30px;
+    float:  right;
+    position: relative;
+}
+
+#dropDown ul {
+    padding: 0 30px;
+}
+
+ul {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+li {
+    float: left;
+    color: white;
+}
+
+nav li {
+    width: 100%;
+    padding: 10px;
+}
+
+nav li a {
+	color: white;
+	padding: 32px 0;
+	text-decoration: none;
+	font-size: 26px;
+}
+
+.selected{
+    color: #F77E0B !important;
+}
+
+.selected:hover{
+    color: #f8973b !important;
 }
