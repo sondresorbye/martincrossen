@@ -23,6 +23,7 @@ header a {
 	padding-left: 20px;
 	text-decoration: none;
 	font-size: 32px;
+	user-select: none;
 }
 
 .arrow-right {
