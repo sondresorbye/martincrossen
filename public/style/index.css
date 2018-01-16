@@ -30,9 +30,9 @@ body {
 }
 
 #cutter {
-    width: 100%;
     position: relative;
-    top: -45px;
+    bottom: calc(100vw / 10);
+    width: 100%;
 }
 
 iframe {
