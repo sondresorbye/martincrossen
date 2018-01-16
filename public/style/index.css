@@ -1,0 +1,29 @@
+body {
+    font-family: roboto;
+}
+
+.parallax-window {
+    min-height: 500px;
+    background: transparent;
+}
+
+#martinImg {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#meldpaBtn {
+	background-color: white;
+	color: #D50000;
+	border:none;
+	padding: 5px 10px;
+	font-size: 20px;
+	border-radius: 3px;
+	text-decoration: none;
+	box-shadow: 0 2px 3px 0 rgba(255, 0, 0, 0.2);
+}

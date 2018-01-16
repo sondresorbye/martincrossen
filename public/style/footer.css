@@ -1,0 +1,60 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    padding-bottom: 210px;
+}
+
+footer {
+    background-color: #D50000;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    color: white;
+    position: absolute;
+    height: 180px;
+    width: 100%;
+    bottom: 0;
+}
+
+footer h3 {
+    text-align: center;
+    padding: 37px 0 5px 0;
+    font-family: Comfortaa;
+    margin: 0;
+    font-size: 37px;
+    color: white;
+}
+
+footer h3 a {
+    text-decoration: none;
+    color: white;
+}
+
+#legalLinks {
+    display: table;
+    margin: 0 auto;
+}
+
+.legalLink {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 10px;
+    margin: 0 16px;
+    transition: 0.1s;
+}
+
+.legalLink:hover {
+    color: #999999;
+}
+
+footer h4 {
+    text-align: center;
+}
+
+footer h4 a {
+    font-family: Audiowide, serif;
+    text-decoration: none;
+    color: white;
+}
