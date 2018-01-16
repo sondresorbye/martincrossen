@@ -28,3 +28,8 @@ body {
 	text-decoration: none;
 	box-shadow: 0 2px 3px 0 rgba(255, 0, 0, 0.3);
 }
+
+iframe {
+	display: table;
+	margin: 10px auto;
+}
