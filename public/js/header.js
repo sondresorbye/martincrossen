@@ -81,5 +81,5 @@ $(window).scroll(function() {
 
     scroll_time = setTimeout(function() {
         scroll_pos = $(window).scrollTop();
-    }, 75);
+    }, 100);
 });
