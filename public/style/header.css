@@ -19,6 +19,7 @@ header {
 	top: -75px;
 }
 
+
 #martinTxt {
 	font-family: Comfortaa;
 	color: #D50000;
@@ -137,16 +138,23 @@ nav li a {
 	color: white;
 	padding: 32px 0;
 	text-decoration: none;
-	font-size: 26px;
+	font-size: 26px;    
+}
+
+.navBtn{
+    transition: 0.2s all;
+
+}
+
+.navBtn:hover {
+    color: #cccccc !important;
 }
 
 .selected{
-    color: #F77E0B !important;
+    color: #cccccc !important;
 }
 
-.selected:hover{
-    color: #f8973b !important;
-}
+
 
 @media only screen and (max-width:870px) {
 	#horizontalNav {
