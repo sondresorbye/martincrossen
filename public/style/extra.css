@@ -1,0 +1,67 @@
+body {
+    font-family: roboto;
+}
+
+#cutter {
+    position: relative;
+    bottom: calc(100vw / 10);
+    width: 100%;
+}
+
+#logo {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    width: 110px;
+    z-index: 9;
+}
+
+.wrapper iframe {
+    display: table;
+    margin: 10px auto;
+    width: 100%;
+}
+
+#counter {
+    color: #D50000;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    margin: 5px;
+}
+
+.temporaryText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.temporaryText p {
+    margin-top: 60px;
+}
+
+@media only screen and (max-width:1015px) {
+    #logo {
+        position: unset;
+        margin: 50px auto;
+        display: table;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .wrapper {
+        padding-top: 40px;
+    }
+}
