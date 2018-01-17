@@ -1,6 +1,5 @@
 body {
     font-family: roboto;
-    overflow-y-top: hidden;
 }
 
 .parallax-window {
@@ -44,10 +43,10 @@ body {
 	z-index: 9;
 }
 
-iframe {
+.wrapper iframe {
     display: table;
     margin: 10px auto;
-    max-width: 100%;
+    width: 100%;
 }
 
 #counter {
