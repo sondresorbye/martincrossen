@@ -3,11 +3,9 @@ var dropDown = false;
 document.getElementById('menuBtn').onclick = function(event) {
     if (dropDown) {
         document.getElementById('dropDown').style.marginTop = "-322px";
-        enableScroll();
         dropDown = false;
     } else {
         document.getElementById('dropDown').style.marginTop = "0px";
-        disableScroll();
         dropDown = true;
     }
     event.stopPropagation();
@@ -23,42 +21,6 @@ $(window).click(function() {
 $('#dropDown').click(function(event) {
     event.stopPropagation();
 });
-
-
-var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
-
-function preventDefault(e) {
-    e = e || window.event;
-    if (e.preventDefault)
-        e.preventDefault();
-    e.returnValue = false;
-}
-
-function preventDefaultForScrollKeys(e) {
-    if (keys[e.keyCode]) {
-        preventDefault(e);
-        return false;
-    }
-}
-
-function disableScroll() {
-    if (window.addEventListener) // older FF
-        window.addEventListener('DOMMouseScroll', preventDefault, false);
-    window.onwheel = preventDefault; // modern standard
-    window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
-    window.ontouchmove = preventDefault; // mobile
-    document.onkeydown = preventDefaultForScrollKeys;
-}
-
-function enableScroll() {
-    if (window.removeEventListener)
-        window.removeEventListener('DOMMouseScroll', preventDefault, false);
-    window.onmousewheel = document.onmousewheel = null;
-    window.onwheel = null;
-    window.ontouchmove = null;
-    document.onkeydown = null;
-}
-
 
 // remove header onscroll
 var scroll_pos = 0;
