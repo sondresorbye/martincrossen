@@ -37,6 +37,9 @@ $(window).scroll(function() {
                 $('#header').removeClass('hidden');
             } else {
                 $('#header').addClass('hidden');
+                if (dropDown) {
+                    menuBtn.onclick();
+                }
             }
         }
     }
