@@ -35,6 +35,12 @@ body {
     width: 100%;
 }
 
+#cutter {
+    position: relative;
+    bottom: calc(100vw / 10);
+    width: 100%;
+}
+
 #logo {
 	position: fixed;
 	bottom: 50px;
@@ -70,11 +76,20 @@ h1{
     margin: 5px;
 }
 
+@media only screen and (max-width:1400px) {
+	.wrapper {
+	    top: -120px;
+	}
+}
+
 @media only screen and (max-width:1015px) {
 	#logo {
 		position: unset;
 		margin: 50px auto;
 		display: table;
+	}
+	.wrapper {
+	    top: -50px;
 	}
 }
 

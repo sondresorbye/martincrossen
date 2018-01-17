@@ -2,7 +2,7 @@ var dropDown = false;
 
 document.getElementById('menuBtn').onclick = function(event) {
     if (dropDown) {
-        document.getElementById('dropDown').style.marginTop = "-398px";
+        document.getElementById('dropDown').style.marginTop = "-322px";
         enableScroll();
         dropDown = false;
     } else {
