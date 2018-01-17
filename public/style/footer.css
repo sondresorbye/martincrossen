@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 footer {
@@ -25,11 +25,11 @@ footer hr {
 }
 
 footer .bla {
-    background-color: blue;
+    background-color: #211F5F;
 }
 
 footer .gul {
-    background-color: yellow;
+    background-color: #FEF300;
 }
 
 footer h3 {
@@ -71,4 +71,10 @@ footer h4 a {
     font-family: Audiowide, serif;
     text-decoration: none;
     color: white;
+}
+
+@media only screen and (max-width:1015px) {
+    body {
+        padding-bottom: 50px;
+    }
 }

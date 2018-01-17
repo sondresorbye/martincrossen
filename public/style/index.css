@@ -70,3 +70,9 @@ iframe {
 		display: table;
 	}
 }
+
+@media only screen and (max-width:500px) {
+    .wrapper {
+        padding-top: 40px;
+    }
+}
