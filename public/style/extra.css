@@ -37,6 +37,15 @@ h1 {
     margin: 5px;
 }
 
+.link{
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    margin: 5px;
+    text-decoration: none;
+    color: black
+}
+
 .temporaryText {
     position: absolute;
     top: 50%;

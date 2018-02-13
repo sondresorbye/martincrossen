@@ -114,6 +114,7 @@ header {
 
 #dropDown ul {
     padding: 0 30px;
+    list-style: none;  
 }
 
 header ul {
@@ -138,7 +139,7 @@ nav li a {
 	color: white;
 	padding: 32px 0;
 	text-decoration: none;
-	font-size: 26px;    
+    font-size: 26px; 
 }
 
 .navBtn{
