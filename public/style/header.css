@@ -114,7 +114,7 @@ header {
 
 #dropDown ul {
     padding: 0 30px;
-    list-style: none;  
+    list-style-type: none;
 }
 
 header ul {

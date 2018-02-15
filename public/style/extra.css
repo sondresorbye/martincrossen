@@ -57,6 +57,10 @@ h1 {
     margin-top: 60px;
 }
 
+img, video {
+    width: 100%;
+}
+
 footer {
     margin-top: 50px;
 }
