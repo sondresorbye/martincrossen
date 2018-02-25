@@ -82,9 +82,9 @@ h1 {
 
 #facebook-container {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 10px;
   padding-top: 35px;
-  height: 0;
+  height: 400px;
   overflow: hidden;
   width: 100%;
 }

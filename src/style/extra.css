@@ -61,6 +61,10 @@ img, video {
     width: 100%;
 }
 
+video {
+    margin-bottom: 50px;
+}
+
 footer {
     margin-top: 50px;
 }
