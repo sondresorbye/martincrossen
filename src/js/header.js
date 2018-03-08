@@ -2,9 +2,11 @@ var dropDown = false;
 
 document.getElementById('menuBtn').onclick = function(event) {
     if (dropDown) {
+        document.getElementById('dropDown').style.visibility = "hidden";
         document.getElementById('dropDown').style.marginTop = "-322px";
         dropDown = false;
     } else {
+        document.getElementById('dropDown').style.visibility = "visible";
         document.getElementById('dropDown').style.marginTop = "0px";
         dropDown = true;
     }
