@@ -86,9 +86,10 @@ header {
 }
 
 #dropDown {
+    visibility: hidden;
     width: 100%;
     background: #D50000;
-    height: 250px;
+    height: 280px;
     transition: .3s;
     position: fixed;
     z-index: 9;
