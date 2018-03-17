@@ -95,10 +95,57 @@
                 width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             <h2 style="text-align: center;">Hjertelig velkommen til MartinCrossen!</h2>
             <div class="grid">
-                <img src="images/martincrossen-lopye-1.jpg" alt="MartinCrossen løype">
-                <img src="images/martincrossen-lopye-2.jpg" alt="MartinCrossen løype">
-                <img src="images/martincrossen-lopye-3.jpg" alt="MartinCrossen løype">
-                <img src="images/martincrossen-lopye-4.jpg" alt="MartinCrossen løype">
+                <img src="images/martincrossen-lopye-1.jpg" onclick="openModal();currentSlide(1)"alt="Baklengs gjennom porten">
+                <img src="images/martincrossen-lopye-2.jpg" onclick="openModal();currentSlide(2)"alt="Dukk under porten">
+                <img src="images/martincrossen-lopye-3.jpg" onclick="openModal();currentSlide(3)"alt="Øvre del av løypa">
+                <img src="images/martincrossen-lopye-4.jpg" onclick="openModal();currentSlide(4)"alt="360 graders sving">
+            </div>
+
+            <div id="lightBox" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+            
+                    <div class="slides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="images/martincrossen-lopye-1.jpg" style="width:100%">
+                    </div>
+            
+                    <div class="slides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="images/martincrossen-lopye-2.jpg" style="width:100%">
+                    </div>
+            
+                    <div class="slides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="images/martincrossen-lopye-3.jpg" style="width:100%">
+                    </div>
+            
+                    <div class="slides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="images/martincrossen-lopye-4.jpg" style="width:100%">
+                    </div>
+            
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+            
+            
+                    <div class="column">
+                        <img class="column_images cursor" src="images/martincrossen-lopye-1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Baklengs gjennom porten">
+                    </div>
+                    <div class="column">
+                        <img class="column_images cursor" src="images/martincrossen-lopye-2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Dukk under porten">
+                    </div>
+                    <div class="column">
+                        <img class="column_images cursor" src="images/martincrossen-lopye-3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Øvre del av løypa">
+                    </div>
+                    <div class="column">
+                        <img class="column_images cursor" src="images/martincrossen-lopye-4.jpg" style="width:100%" onclick="currentSlide(4)" alt="360 graders sving">
+                    </div>
+                </div>
             </div>
             <div id="facebook-container">
                 <iframe id="facebook-iframe" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMartinCrossen-1821879001198132%2F&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
