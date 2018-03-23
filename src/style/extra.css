@@ -47,13 +47,20 @@ h1 {
 }
 
 .temporaryText {
+    display: table;
     text-align: center;
     margin: 20px auto;
     padding: 20px;
 }
 
-.temporaryText p {
+.temporaryText p, .temporaryText a.superLink, .temporaryText h1 {
     margin-top: 60px;
+    text-decoration: none;
+    color: #000;
+    font-size: 32px;
+    font-family: roboto;
+    text-align: center;
+    cursor: pointer;
 }
 
 img, video {
