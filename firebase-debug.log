@@ -1,0 +1,26 @@
+[debug] [2019-03-26T16:28:54.395Z] ----------------------------------------------------------------------
+[debug] [2019-03-26T16:28:54.397Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Sondr\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-03-26T16:28:54.397Z] CLI Version:   6.5.0
+[debug] [2019-03-26T16:28:54.397Z] Platform:      win32
+[debug] [2019-03-26T16:28:54.398Z] Node Version:  v8.9.0
+[debug] [2019-03-26T16:28:54.398Z] Time:          Tue Mar 26 2019 17:28:54 GMT+0100 (Vest-Europa (normaltid))
+[debug] [2019-03-26T16:28:54.398Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-03-26T16:28:54.411Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-26T16:28:54.412Z] > authorizing via signed-in user
+[debug] [2019-03-26T16:28:54.412Z] [iam] checking project martincrossen-5da8b for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-03-26T16:28:54.415Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/martincrossen-5da8b:testIamPermissions  
+
+[debug] [2019-03-26T16:28:55.403Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-26T16:28:55.406Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/martincrossen-5da8b  
+ 
+[debug] [2019-03-26T16:28:55.707Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'martincrossen-5da8b'...
+[info] 
+[info] i  deploying hosting
+[info] Running command: gulp
+[info] +  hosting: Finished running predeploy script.
+[debug] [2019-03-26T16:29:01.806Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/martincrossen-5da8b/versions  
+
+[debug] [2019-03-26T16:29:03.285Z] <<< HTTP RESPONSE 200
