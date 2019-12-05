@@ -23,6 +23,6 @@ var countdownfunction = setInterval(function() {
     // If the count down is over, write some text
     if (distance < 0) {
         clearInterval(countdownfunction);
-        document.getElementById("counter").innerHTML = "EXPIRED";
+        document.getElementById("counter").innerHTML = "MartinCrossen har starta!";
     }
 }, 1000);
