@@ -1,0 +1,168 @@
+body {
+	margin: 0;
+	padding-top: 70px;
+}
+
+header {
+	background-color: #D50000;
+	height: 70px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+    overflow: hidden;
+	z-index: 10;
+	box-shadow: rgba(0,0,0,0.2) 0 2px 6px 0;
+	transition: top .3s cubic-bezier(0.35, 0, 0.25, 1);
+}
+
+.hidden {
+	top: -75px;
+}
+
+
+#martinTxt {
+	font-family: Comfortaa;
+	color: #D50000;
+	margin: 0;
+	background-color: white;
+	display: table;
+	line-height: 71px;
+	padding-left: 20px;
+	text-decoration: none;
+	font-size: 32px;
+	user-select: none;
+}
+
+.arrow-right {
+	position: absolute;
+	top: 0;
+	left: 269px;
+	width: 0px;
+	height: 0px;
+	border-top: 35px solid transparent;
+	border-bottom: 35px solid transparent;
+	border-left: 60px solid white;
+}
+
+#horizontalNav {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 16px;
+}
+
+#horizontalNav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+#horizontalNav li {
+    float: left;
+    color: white;
+}
+
+#horizontalNav .navBtn {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+#menuBtn {
+    display: none;
+    position: absolute;
+    right: 22px;
+    top: 16px;
+    background: none;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+#dropDown {
+    visibility: hidden;
+    width: 100%;
+    background: #D50000;
+    height: 280px;
+    transition: .3s;
+    position: fixed;
+    z-index: 9;
+}
+
+#searchSideNav {
+    width: 100%;
+    padding: 20px 0;
+}
+
+#searchSideNav input {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    display: table;
+}
+
+#searchSideNav button {
+    top: -34px;
+    right: 30px;
+    float:  right;
+    position: relative;
+}
+
+#dropDown ul {
+    padding: 0 30px;
+    list-style-type: none;
+}
+
+header ul {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    overflow: hidden;
+    vertical-align: bottom;
+}
+
+header li {
+    float: left;
+    color: white;
+}
+
+nav li {
+    width: 100%;
+    padding: 10px;
+}
+
+nav li a {
+	color: white;
+	padding: 32px 0;
+	text-decoration: none;
+    font-size: 26px; 
+}
+
+.navBtn{
+    transition: 0.2s all;
+
+}
+
+.navBtn:hover {
+    color: #cccccc !important;
+}
+
+.selected{
+    color: #cccccc !important;
+}
+
+
+
+@media only screen and (max-width: 950px) {
+	#horizontalNav {
+		display: none;
+	}
+	#menuBtn {
+		display: unset;
+	}
+}

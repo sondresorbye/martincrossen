@@ -1,8 +1,7 @@
 {
     "hosting":
     {
-        "predeploy": "gulp",
-        "public": "dist",
+        "public": "public",
         "ignore": [
             "firebase.json",
             "**/.*",
