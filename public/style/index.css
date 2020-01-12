@@ -77,6 +77,34 @@ h1 {
   margin: 5px;
 }
 
+#teamOsloAppAd {
+  border: #ffffff1a solid 2px;
+  border-radius: 8px;
+  background: #29B4E6;
+  color: white;
+  cursor: pointer;
+  display: flex;
+}
+
+#teamOsloAppAd img {
+  width: 130px;
+  height: 130px;
+}
+
+#teamOsloAppAd h3 {
+  margin: 15px 0px 0px 0px;
+}
+
+#teamOsloAppAd p {
+  margin-top: 4px;
+  margin-right: 10px;
+}
+
+#magsonLink {
+  font-family: audiowide;
+  color: white;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

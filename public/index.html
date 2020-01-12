@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300|Audiowide|Comfortaa:700|Material+Icons"
         rel="stylesheet">
-    <link rel="stylesheet" href="style/footer.css?v=@version@">
-    <link rel="stylesheet" href="style/index.css?v=@version@">
-    <link rel="stylesheet" href="style/header.css?v=@version@">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/header.css">
     <meta name="viewport" content="width=device-width,initial-scale=.75">
     <meta name="theme-color" content="#D50000">
     <meta name="description" content="Martincrossen 2018">
@@ -92,10 +92,34 @@
                     Bymiljøetaten.
                 </strong>
             </p>
-            <p>Martincrossen er det 10’ende og siste rennet i BuyPass-cupen og vil avsluttes med premieutdeling. Se <a
-                    href="https://www.skiforbundet.no/oslo/langrenn/skirenn/buypasscup/">BuyPasscup</a></p>
             <p>Martin Johnsrud Sundby bidrar til arrangementet og vil være til stede</p>
             <p>Røa Langrenn oppfordrer alle deltakere til å bruke fluorfrie glidprodukter.</p>
+            <p>Martincrossen er det 10’ende og siste rennet i BuyPass-cupen og vil avsluttes med premieutdeling. Se <a
+                    href="https://www.skiforbundet.no/oslo/langrenn/skirenn/buypasscup/">BuyPasscup</a></p>
+            <article id="teamOsloAppAd">
+                <img src="images/teamOsloLogo.webp" alt="">
+                <div>
+                    <h3>Last ned Team Oslo appen!</h3>
+                    <p>Skiforundet sin app Team Oslo viser deg blant annet BuyPasscup resultater, terminliste og andre
+                        nyheter. MartinCrossen er det siste rennet i cupen. Last ned Team Oslo appen til Android eller
+                        iOS for å se hvilken plass du er på! Utviklet av <a id="magsonLink" target="_blank"
+                            href="https://magson.no">MAGSON</a>.</p>
+                </div>
+            </article>
+            <script>
+                document.getElementById('magsonLink').onclick = (e) => {
+                    e.stopPropagation();
+                }
+                document.getElementById('teamOsloAppAd').onclick = () => {
+                    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+                    if (/android/i.test(userAgent)) {
+                        window.open("https://play.google.com/store/apps/details?id=no.magson.skicup");
+                    }
+                    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                        window.open("https://apps.apple.com/gm/app/team-oslo/id1447943567");
+                    }
+                }
+            </script>
             <h2>Tid og sted</h2>
             <p>MartinCrossen vil bli arrangert mandag 9. mars 2019 i nye Røa Snøpark. I 2019 ble rennet fulltegnet lenge
                 før påmeldingsfristens utløp, så meld deg på så snart som mulig for å sikre deg plass!
@@ -190,9 +214,9 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/parallax.js?v=@version@"></script>
-    <script src="js/header.js?v=@version@"></script>
-    <script src="js/countdown.js?v=@version@"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/countdown.js"></script>
 </body>
 
 </html>
