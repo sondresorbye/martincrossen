@@ -1,0 +1,30 @@
+[debug] [2020-03-03T10:02:12.782Z] ----------------------------------------------------------------------
+[debug] [2020-03-03T10:02:12.784Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --only hosting
+[debug] [2020-03-03T10:02:12.784Z] CLI Version:   7.14.0
+[debug] [2020-03-03T10:02:12.784Z] Platform:      darwin
+[debug] [2020-03-03T10:02:12.784Z] Node Version:  v10.15.0
+[debug] [2020-03-03T10:02:12.785Z] Time:          Tue Mar 03 2020 11:02:12 GMT+0100 (Central European Standard Time)
+[debug] [2020-03-03T10:02:12.785Z] ----------------------------------------------------------------------
+[debug] [2020-03-03T10:02:12.785Z] 
+[debug] [2020-03-03T10:02:12.791Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-03T10:02:12.791Z] > authorizing via signed-in user
+[debug] [2020-03-03T10:02:12.791Z] [iam] checking project martincrossen-5da8b for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-03-03T10:02:12.792Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/martincrossen-5da8b:testIamPermissions  
+
+[debug] [2020-03-03T10:02:13.822Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-03T10:02:13.823Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/martincrossen-5da8b  
+ 
+[debug] [2020-03-03T10:02:14.069Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'martincrossen-5da8b'...
+[info] 
+[info] i  deploying hosting
+[debug] [2020-03-03T10:02:14.072Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/martincrossen-5da8b/versions  
+
+[debug] [2020-03-03T10:02:15.765Z] <<< HTTP RESPONSE 200
+[info] i  hosting[martincrossen-5da8b]: beginning deploy...
+[info] i  hosting[martincrossen-5da8b]: found 47 files in public
+[debug] [2020-03-03T10:02:15.783Z] [hosting] hash cache [cHVibGlj] stored for 47 files
+[debug] [2020-03-03T10:02:15.783Z] [hosting][hash queue][FINAL]
+[debug] [2020-03-03T10:02:15.783Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/martincrossen-5da8b/versions/b94953410562d75b:populateFiles  
+ <request body omitted>
